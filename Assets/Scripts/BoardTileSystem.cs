@@ -22,7 +22,7 @@ public class BoardTileSystem : EditorWindow
 
     private void OnGUI()
     {
-        GUILayout.Label("Create Board Tiles", EditorStyle.boldLabel);
+        //GUILayout.Label("Create Board Tiles", EditorStyle.boldLabel);
         object_base_name = EditorGUILayout.TextField("NormalTile", object_base_name);
     }
 }
