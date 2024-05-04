@@ -207,6 +207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &82620040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291,6 +293,101 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
+--- !u!1 &88424062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88424063}
+  - component: {fileID: 88424065}
+  - component: {fileID: 88424064}
+  - component: {fileID: 88424066}
+  m_Layer: 5
+  m_Name: KeysNeeded
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &88424063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88424062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1820801891}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 69.2, y: -77.02}
+  m_SizeDelta: {x: 160, y: 68.53}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &88424064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88424062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: <color=yellow>Keys:</color>
+--- !u!222 &88424065
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88424062}
+  m_CullTransparentMesh: 1
+--- !u!114 &88424066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88424062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d69e5076f4ab434c9c7b49f09d4ca8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 894005813}
 --- !u!1001 &88480441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,6 +472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &94857167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,6 +558,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &111853117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,6 +644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &112416076
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &112416077
 RectTransform:
   m_ObjectHideFlags: 0
@@ -775,6 +878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &128622627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -859,6 +964,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &130460612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -943,6 +1050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &180484753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1027,6 +1136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &209128491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1111,6 +1222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &234547477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,6 +1308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &240758693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1279,6 +1394,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &253506531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1363,6 +1480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &274769127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1447,6 +1566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &291907729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1531,6 +1652,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &313380077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,6 +1834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &359641833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1795,6 +1920,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &361104394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1879,6 +2006,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &369598562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1963,6 +2092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &394327595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &420806702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2227,6 +2360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &429932561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2311,6 +2446,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &437025233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2318,6 +2455,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe7617959197f64d82fbe7f0e662d1d, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (9)
@@ -2395,6 +2536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &437270610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2479,6 +2622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &439747147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2563,6 +2708,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &457147068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2647,6 +2794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &465480754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2731,6 +2880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &474117661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2815,6 +2966,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &489208449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2899,6 +3052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &492380898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,6 +3286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &525482649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3215,6 +3372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &561319551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3299,6 +3458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &562062367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,6 +3625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &587080848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3548,6 +3711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &590961453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,6 +3876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &642163125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3795,6 +3962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &646006757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3879,6 +4048,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,6 +4150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf115c93c50ba9e4ab8718082174c1a9, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (99)
@@ -4056,6 +4231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &776222914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4140,6 +4317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &797214294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,6 +4548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &818395580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4453,6 +4634,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &828838920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4537,6 +4720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &847281814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4621,70 +4806,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
---- !u!1 &894005810
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 894005811}
-  - component: {fileID: 894005812}
-  - component: {fileID: 894005813}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &894005811
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894005810}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9655104, y: 5.228232, z: 0.94270736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &894005812
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
+--- !u!114 &894005813 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8357085631300567683, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+  m_PrefabInstance: {fileID: 8357085631624016054}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894005810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d94fdd892015f3041b13914a990c4ea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 963194227}
-  piece: {fileID: 1315093826}
---- !u!114 &894005813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894005810}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe5cfb57793e405409f4dff30e192fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseHandler: {fileID: 894005812}
-  Player1Piece: {fileID: 1315093826}
-  Player2Piece: {fileID: 313380077}
-  Player3Piece: {fileID: 394327595}
-  Player4Piece: {fileID: 963083239}
-  textBox: 
 --- !u!1001 &905143491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4769,6 +4903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &963083239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,13 +5077,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.6551864, y: -0, z: -0, w: 0.7554673}
-  m_LocalPosition: {x: -2.55, y: 19.43, z: 1.43}
+  m_LocalRotation: {x: 0.6345552, y: -0, z: -0, w: 0.7728776}
+  m_LocalPosition: {x: -2.55, y: 19.43, z: 0.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 81.868, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 78.774, y: 0, z: 0}
 --- !u!1001 &965516112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5032,6 +5168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &980221806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5116,6 +5254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &981874120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5200,6 +5340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &985309085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5284,6 +5426,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &986900911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5368,6 +5512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1012544777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5452,6 +5598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1016179816
 GameObject:
   m_ObjectHideFlags: 0
@@ -5615,6 +5763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1022756334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5699,6 +5849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1027087778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5706,6 +5858,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f35d51ce0a151b43a1846d2cd12445d, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (113)
@@ -5791,6 +5947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1044758799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5798,6 +5956,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a6dd4516a42f514982b7cf7e062af0f, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (105)
@@ -5875,6 +6037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 1
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1063847638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5959,6 +6123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1086186945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6043,6 +6209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1089895186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6050,6 +6218,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe7617959197f64d82fbe7f0e662d1d, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (47)
@@ -6127,6 +6299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1101046817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6211,6 +6385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1101464306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6295,6 +6471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1116679331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6302,6 +6480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a6dd4516a42f514982b7cf7e062af0f, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (61)
@@ -6379,6 +6561,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 1
+  gameManager: {fileID: 894005813}
 --- !u!1 &1166452457
 GameObject:
   m_ObjectHideFlags: 0
@@ -6465,6 +6649,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe7617959197f64d82fbe7f0e662d1d, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (22)
@@ -6542,6 +6730,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1197764375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6626,6 +6816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1248060686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6710,6 +6902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1310746075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6794,6 +6988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1312895999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6878,6 +7074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1315093826
 GameObject:
   m_ObjectHideFlags: 0
@@ -7058,6 +7256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1337188492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7142,6 +7342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1343165943
 GameObject:
   m_ObjectHideFlags: 0
@@ -7257,6 +7459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1370202455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7341,6 +7545,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1374921709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7425,6 +7631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1387204398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7509,6 +7717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1397335235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7593,6 +7803,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1397519509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7672,6 +7884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!4 &1397519515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4603611386096508869, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
@@ -7852,6 +8066,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1423680746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7936,6 +8152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1482458727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8020,6 +8238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1490198648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,6 +8324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1544103379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8188,6 +8410,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1556359498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8272,6 +8496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1560418691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8279,6 +8505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe7617959197f64d82fbe7f0e662d1d, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (32)
@@ -8356,6 +8586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1575995781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8440,6 +8672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1621389132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8524,6 +8758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1686939844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8608,6 +8844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1697252997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8692,6 +8930,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1698157296
 GameObject:
   m_ObjectHideFlags: 0
@@ -8795,6 +9035,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c037384cadd4ad40bf2838b703e388b, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (114)
@@ -8880,6 +9124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1708753214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8964,6 +9210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1715650005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8971,6 +9219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a6dd4516a42f514982b7cf7e062af0f, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (101)
@@ -9048,6 +9300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 1
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1717111512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9132,6 +9386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1727447482
 GameObject:
   m_ObjectHideFlags: 0
@@ -9364,6 +9620,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1791331709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9448,6 +9706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1795490177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9532,6 +9792,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1797165697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9616,6 +9878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1797453627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9700,6 +9964,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1800244858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9784,6 +10050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1815832774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9868,6 +10136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1820801890
 GameObject:
   m_ObjectHideFlags: 0
@@ -9901,6 +10171,7 @@ RectTransform:
   m_Children:
   - {fileID: 1727447483}
   - {fileID: 492380899}
+  - {fileID: 88424063}
   m_Father: {fileID: 1879833363}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10069,6 +10340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1849625189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10153,6 +10426,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1855206948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10237,6 +10512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1858592768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10321,6 +10598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1878554505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10405,6 +10684,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1879833359
 GameObject:
   m_ObjectHideFlags: 0
@@ -10591,6 +10872,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1 &1889956964
 GameObject:
   m_ObjectHideFlags: 0
@@ -10741,6 +11024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1979284142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10748,6 +11033,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cf115c93c50ba9e4ab8718082174c1a9, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (103)
@@ -10825,6 +11114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &1999735343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10909,6 +11200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2003876482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10916,6 +11209,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 797214295}
     m_Modifications:
+    - target: {fileID: 1162608457430550541, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a6dd4516a42f514982b7cf7e062af0f, type: 2}
     - target: {fileID: 3267341402220468110, guid: 2dd8fe8a2ab8a14439eda4bd30a02aa1, type: 3}
       propertyPath: m_Name
       value: tileNormal (66)
@@ -10993,6 +11290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 1
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2017150854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11077,6 +11376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2027084148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11161,6 +11462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2055733553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11245,6 +11548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2091683258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11329,6 +11634,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2096540909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11413,6 +11720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2105350447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11497,6 +11806,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2110895197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11581,6 +11892,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2119969407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11665,6 +11978,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2125426857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11749,6 +12064,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
 --- !u!1001 &2137637241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11833,3 +12150,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePlacementOffset: {x: 0, y: 0.5, z: 0}
+  isKeySpace: 0
+  gameManager: {fileID: 894005813}
+--- !u!1001 &8357085631624016054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8357085631300567682, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 963194227}
+    - target: {fileID: 8357085631300567682, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: piece
+      value: 
+      objectReference: {fileID: 1315093826}
+    - target: {fileID: 8357085631300567683, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: Player1Piece
+      value: 
+      objectReference: {fileID: 1315093826}
+    - target: {fileID: 8357085631300567683, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: Player2Piece
+      value: 
+      objectReference: {fileID: 313380077}
+    - target: {fileID: 8357085631300567683, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: Player3Piece
+      value: 
+      objectReference: {fileID: 394327595}
+    - target: {fileID: 8357085631300567683, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: Player4Piece
+      value: 
+      objectReference: {fileID: 963083239}
+    - target: {fileID: 8357085631300567684, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.9655104
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.228232
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.94270736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357085631300567685, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3d9af38a43501e458af8fc4c65c891c, type: 3}

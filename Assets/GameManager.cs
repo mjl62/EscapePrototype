@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    enum GAMESTATE { INIT, TURN, END };
 
-    GAMESTATE gamestate = GAMESTATE.INIT;
     List<Player> players = new List<Player>();
     [SerializeField] MouseHandler mouseHandler;
 
@@ -18,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     int playerturn_index = 0;
     public Player currentPlayer = null;
-    int keys_collected = 0;
+    public int keys_collected = 0;
 
     // What to display in the text box at the top of the UI
     public string textBox = "";
@@ -38,8 +36,6 @@ public class GameManager : MonoBehaviour
 
         // Set current player
         currentPlayer = players[0];
-
-        //StartCoroutine(GameLoop());
     }
 
     public void endTurn()
@@ -70,16 +66,21 @@ public class GameManager : MonoBehaviour
             else if (rolled == 9) textBox = ("Robot can move a human player 3 spaces any direction!");
             else Debug.LogError("Unexpected value: " + rolled);
         }
-        
     }
 
-    public void checkPlayerDeath()
+    public void keyGet()
     {
-        for (int i = 0; i < 2; i++)
+        keys_collected++;
+    }
+
+    public void checkPlayerStatus()
+    {
+        for (int i = 0; i < 3; i++)
         {
-            if (players[i].getPiece().transform.position == players[4].getPiece().transform.position)
+            if (players[i].getPiece().transform.position == players[3].getPiece().transform.position)
             {
                 players[i].die();
+                players[i].getPiece().SetActive(false);
             }
         }
     }
