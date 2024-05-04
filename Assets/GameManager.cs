@@ -17,17 +17,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Player4Piece;
 
     int playerturn_index = 0;
-    Player currentPlayer = null;
+    public Player currentPlayer = null;
     int keys_collected = 0;
+
+    // What to display in the text box at the top of the UI
+    public string textBox = "";
 
     // Start is called before the first frame update
     void Start()
     {
         // Create players and robot
-        Player player1 = new Player("Human 1", Player1Piece);
-        Player player2 = new Player("Human 2", Player2Piece);
-        Player player3 = new Player("Human 3", Player3Piece);
-        Player player4 = new Robot("Robot", Player4Piece);
+        Player player1 = new Player("Human 1", Player1Piece, "yellow");
+        Player player2 = new Player("Human 2", Player2Piece, "blue");
+        Player player3 = new Player("Human 3", Player3Piece, "red");
+        Player player4 = new Robot("Robot", Player4Piece, "white");
         players.Add(player1);
         players.Add(player2);
         players.Add(player3);
@@ -39,9 +42,9 @@ public class GameManager : MonoBehaviour
         //StartCoroutine(GameLoop());
     }
 
-
     public void endTurn()
     {
+        textBox = "";
         if (playerturn_index >= 3) playerturn_index = 0;
         else playerturn_index++;
 
@@ -56,7 +59,29 @@ public class GameManager : MonoBehaviour
     public void roll()
     {
         int rolled = currentPlayer.roll();
-        Debug.Log(currentPlayer.getName() + " rolls " + rolled);
+        textBox = currentPlayer.getName() + " rolls " + rolled;
+        if (playerturn_index == 3)
+        {
+            if (rolled <= 3) textBox = ("Robot can move 3 spaces");
+            else if (rolled == 4) textBox = ("Robot can move 4 spaces");
+            else if (rolled == 5) textBox = ("Robot can move 5 spaces");
+            else if (rolled == 6 || rolled == 7) textBox = ("Robot can move 3 spaces and place a <color=blue>Freeze Trap</color>");
+            else if (rolled == 8) textBox = ("Teleport to any <color=purple>Teleport Space</color>");
+            else if (rolled == 9) textBox = ("Robot can move a human player 3 spaces any direction!");
+            else Debug.LogError("Unexpected value: " + rolled);
+        }
+        
+    }
+
+    public void checkPlayerDeath()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            if (players[i].getPiece().transform.position == players[4].getPiece().transform.position)
+            {
+                players[i].die();
+            }
+        }
     }
 
 }
@@ -66,47 +91,35 @@ public class Player
     string name = "Player";
     bool alive = true;
     int movement = 0;
+    string color;
 
     GameObject piece;
 
-    public Player(string name, GameObject piece)
+    public Player(string name, GameObject piece, string color)
     {
         this.name = name;
         this.piece = piece;
+        this.color = color;
     }
 
-    public int roll()
+    public string getColor()
+    {
+        return color;
+    }
+
+    public virtual int roll()
     {
         movement = Random.Range(1, 7);
         return movement;
     }
 
-    public bool doMovement()
-    {
-        if (movement > 0)
-        {
-            movement--;
-            return true;
-        }
-        return false;
-    }
-
-    public void setMovement(int movement)
-    {
-        this.movement = movement;
-    }
-
-    public int getMovement()
-    {
-        return movement;
-    }
 
     public GameObject getPiece()
     {
         return piece;
     }
 
-    public void die()
+    public virtual void die()
     {
         alive = false;
     }
@@ -125,47 +138,17 @@ public class Player
 public class Robot : Player
 {
 
-    public Robot(string name, GameObject piece) : base(name, piece)
+    public Robot(string name, GameObject piece, string color) : base(name, piece, color)
     {
     }
 
-    public new int roll()
+    public override int roll()
     {
-        setMovement(3);
         int random_roll = Random.Range(0, 10);
-
-        switch (random_roll)
-        {
-            case 0:
-            case 1:
-            case 2:
-            case 3:
-                break;
-            case 4:
-                setMovement(4);
-                break;
-            case 5:
-                setMovement(5);
-                break;
-            case 6:
-            case 7:
-                Debug.Log("Freeze Trap");
-                break;
-            case 8:
-                Debug.Log("Teleport");
-                break;
-            case 9:
-                Debug.Log("Robot Move Player");
-                break;
-            case '_':
-                Debug.LogError("Unexpected value: " + random_roll);
-                break;
-        }
-
         return random_roll;
     }
 
-    public new void die()
+    public override void die()
     {
         Debug.Log("Robot cannot die!");
     }
